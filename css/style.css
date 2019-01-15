@@ -1,3 +1,76 @@
+.text_container {
+    vertical-align: middle;
+}
+
+.image_container {
+    text-align: center;
+}
+
+.image_container img {
+    vertical-align: middle;
+}
+
+.page-title {
+  font-size: 90px;
+  text-align: center;
+}
+
+.contact-image {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.secondary-title {
+  font-size: 50px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.secondary-item {
+  border-top: 1px solid #c8cbd1;
+}
+
+.secondary-icon {
+  height: 50px;
+  margin-top: 15px;
+  float: right;
+}
+
+.favorite-content {
+  text-align: center;
+}
+
+.favorite-icon {
+  max-width: 100%;
+  padding-bottom: 15px;
+}
+
+.secondary-item-title {
+  font-size: 35px;
+}
+
+.secondary-item-desc {
+}
+
+.secondary-item-link {
+  padding-bottom: 10px;
+}
+
+.contact-image img {
+  max-height: 100px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.wrapper {
+  background-color: #F9F4ED;
+  font-family: 'Vibur', cursive;
+}
+
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -21,8 +94,6 @@ section.module.content {
   padding: 20px 0;
 }
 section.module.parallax {
-  height: 630px;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -33,7 +104,7 @@ section.module.parallax {
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
-  line-height: 150px;
+  line-height: 100px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -41,32 +112,41 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-  background-image: url("../img/addie.jpg");
 }
 section.module.parallax-2 {
   background-color: #ceaeae;
-  height: 100px;
+  height: 50px;
+  border-radius: 25px;
 }
 section.module.parallax-3 {
-  background-image: url("../img/student.jpg");
 }
 section.module.parallax-4 {
   background-color: #d8d363;
-  height: 100px;
+  height: 50px;
+  border-radius: 25px;
 }
-
 section.module.parallax-5 {
-  background-image: url("../img/dragonfly.jpg");
+  background-color: #cebeaf;
+  height: 50px;
+  border-radius: 25px;
 }
 
 @media all and (min-width: 300px) {
 
   .image_container img {
     width: 150px;
+    border-radius: 50%;
   }
 
   section.module.parallax-1 {
-    background-position: 0%;
+    background-position: 50%;
+  }
+
+  section.module.parallax-1, section.module.parallax-3  {
+  }
+
+  section.module.parallax-2, section.module.parallax-4  {
+    height: 50px;
   }
 
 }
@@ -84,8 +164,10 @@ section.module.parallax-5 {
   }
 
   section.module.parallax-2 {
-    //height: 800px;
-    //padding: 10px 10px;
+  }
+
+  section.module.parallax-1 {
+    background-position: 50% 75%;
   }
 
   section.module.content {
@@ -93,7 +175,7 @@ section.module.parallax-5 {
   }
 
   .image_container img {
-    width: 512px;
+    width: 350px;
   }
 
 }
@@ -105,24 +187,14 @@ section.module.parallax-5 {
   }
 
     section.module.parallax-2 {
-      //height: 587px;
-      //padding: 123.5px 100px;
     }
 
     section.module.content {
-      height: 400px;
     }
-}
 
-.text_container {
-    vertical-align: middle;
-}
+  section.module.parallax-1 {
+  }
 
-.image_container {
-    text-align: center;
-}
-
-.image_container img {
-    vertical-align: middle;
-    padding-top: 10px;
+  section.module.parallax-1, section.module.parallax-3  {
+  }
 }
